@@ -1,0 +1,361 @@
+/* This file should contain ONLY default formatting for standard HTML elements and */
+/* class definitions for styles to be used by the author in the Martha editor.     */
+/* These styles are not used at runtime.                                           */
+
+/* body style is used to set the default style for the Sferyx editor and all runtime text */
+body {
+	color: #222222;
+	background-color: #fff;
+	font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3em;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 225%;
+}
+
+h2 {
+	font-size: 175%;
+}
+
+h3 {
+	font-size: 135%;
+}
+
+h4 {
+	font-size: 125%;
+}
+
+h5 {
+	font-size: 115%;
+}
+
+h6 {
+	font-size: 105%;
+}
+
+a {
+	outline: 0;
+}
+
+a:link {
+	color: #595959;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #595959;
+}
+
+a:hover {
+	color: #000;
+}
+
+a:active {
+	color: #595959;
+}
+
+p {
+	font-size: 100%;
+}
+
+p.sectitle{
+	font-size: 200%;
+	color: #424F55;
+}
+
+p.sectitletheme{
+	font-size: 200%;
+	color: #00756f;
+}
+
+p.sectitlegrey{
+	font-size: 200%;
+	color: #A6A9AC;
+}
+
+p.secsubtext{
+	font-size: 125%;
+	color: #424F55;
+}
+
+p.secsubtexttheme{
+	font-size: 125%;
+	color: #00756f;
+}
+
+p.secsubtextgrey{
+	font-size: 125%;
+	color: #A6A9AC;
+}
+
+p.q{
+	font-size: 100%;
+	color: #424F55;
+}
+
+p.qtheme{
+	font-size: 100%;
+	color: #00756f;
+}
+
+p.qsubtext{
+	font-size: 80%;
+	color: #424F55;
+}
+
+p.qguidetext{
+	font-size: 80%;
+	color: #A6A9AC;
+}
+
+p.qguidetheme{
+	font-size: 80%;
+	color: #00756f;
+}
+
+p.answer{
+	font-size: 90%;
+	color: #424F55;
+}
+
+p.subtext {
+	font-size: 80%;
+	color: #424F55;
+}
+
+p.grey {
+	color: #6a7f8a;
+}
+
+p.teal {
+	color: #00b5ad;
+}	
+
+dt {
+	font-weight: bold;
+}
+
+/* only used in a one hint example */
+dd {
+	margin-bottom: 6px;
+}
+
+/* styles for the Sferyx editor */
+/* apply to headings via paragraph styles dialog */
+.h-red {
+	color: #800000;
+}
+
+.h-gray {
+	color: #888888;
+}
+
+.h-green {
+	color: #003333;
+}
+
+.h-blue {
+	color: #1C338F;
+}
+
+/* apply to spans via style drop-down list */
+.sp-blue-bold {
+	color: #1C338F;
+	font-weight: bold;
+}
+
+.sp-green-bold {
+	color: #003333;
+	font-weight: bold;
+}
+
+.sp-bold {
+	font-weight: bold;
+}
+
+.sp-teal-bold {
+	font-weight: bold;
+	color: #00b5ad;
+}
+
+.sp-italic {
+	font-style: italic;
+}
+
+.sp-italic-bold {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.sp-red-bold {
+	color: #800000;
+	font-weight: bold;
+}
+
+.sp-gray-bold {
+	color: #888888;
+	font-weight: bold;
+}
+
+/* Tooltip container */
+.sp-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.sp-tooltip .sp-tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.sp-tooltip .sp-tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.sp-tooltip:hover .sp-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* apply to pargagraphs via paragraph styles dialog */
+.pa-info {
+	color: #000;
+	font-size: 100%;
+	line-height: 1.6em;
+	background: url('/images/infoBG.png') 6px 6px no-repeat;
+	padding: 0 24px 6px 40px;
+	border: 0;
+}
+
+.pa-note {
+	color: #000;
+	font-size: 100%;
+	line-height: 1.6em;
+	background: url('/images/noteBG.png') 6px 6px no-repeat;
+	padding: 0 24px 6px 30px;
+	border: 0;
+}
+
+.pa-tip {
+	color: #000;
+	font-size: 100%;
+	line-height: 1.6em;
+	background: url('/images/tipBG.png') 6px 6px no-repeat;
+	padding: 0 24px 6px 30px;
+	border: 0;
+}
+
+.pa-warning {
+	color: #000;
+	font-size: 100%;
+	line-height: 1.6em;
+	background: url('/images/warningBG.png') 6px 6px no-repeat;
+	padding: 0 24px 6px 30px;
+	border: 0;
+}
+
+.pa-block {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.pa-block-border {
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	border: 1px solid #808080;
+}
+
+.pa-block-border-lr {
+	margin-left: 50px;
+	margin-right: 50px;
+	border: 1px solid #808080;
+	border-top: 0;
+	border-bottom: 0;
+	padding: 5px 10px 5px 10px;
+}
+
+.pa-background {
+	border: 1px;
+	background-color: #d9d9d9;
+	padding: 5px 10px 5px 10px;
+}
+
+.pa-indent {
+	margin-left: 25px;
+}
+
+.fact {
+padding-top: 4px;
+}
+
+.pa-question-new {
+	padding: 30px 30px 20px 0px;
+}
+
+.pa-fact-new {
+	font-size: 120%;
+	padding: 0px 30px 0px 30px;
+	border-left: 10px solid #ffffff;
+}
+
+.pa-fact-new:hover { border-left: 10px solid #00b5ad; }
+
+.normal {
+}
+
+.pageBreak {
+  border: none;  
+}
+
+.sectionBreak {
+  border: none;  
+}
+
+.hiddenfooter {
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+.hoverfooter:hover .hiddenfooter {
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
